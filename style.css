@@ -1,0 +1,501 @@
+/* ===================================================
+   IMD 318 ASSIGNMENT - PINK THEME STYLESHEET
+   =================================================== */
+/* ===================================================
+   WELCOME PAGE CENTERED STYLING
+   =================================================== */
+
+.center-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    margin: 0;
+}
+
+.welcome-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    border: 3px solid #ffb6c1;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffb6c1;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+}
+
+.cute-box {
+    background-color: #fff0f5;
+    border: 2px dashed #ff69b4;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 15px 0;
+    text-align: left;
+}
+/* ===================================================
+   SIMPLE CIRCLE PROFILE PICTURE STYLING
+   =================================================== */
+
+.circle-profile-pic {
+    width: 170px; 
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0px 4px 12px rgba(255, 105, 180, 0.3);
+    display: block;
+}
+/* Global Body Styles */
+body {
+    background-color: #fff0f5; /* Soft pink background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header & Title Styling */
+header {
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.3);
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    margin: 0;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #c71585;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffb6c1;
+    color: #ffffff;
+}
+
+.home-btn {
+    background-color: #ff1493;
+    color: white !important;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Card Sections (Left Aligned Content) */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    border: 2px solid #ffb6c1;
+    text-align: left; /* Forces paragraphs & text to the left */
+}
+
+.card h2 {
+    color: #c71585;
+    margin-top: 0;
+    border-bottom: 2px dashed #ffb6c1;
+    padding-bottom: 8px;
+}
+
+.card p, .card ul, .card li {
+    text-align: left;
+    color: #444444;
+}
+
+/* Centered Elements helper */
+.text-center {
+    text-align: center;
+}
+
+/* Special Explore Box Styling */
+.explore-box {
+    background: linear-gradient(135deg, #ffffff, #fff0f5);
+    border: 2px dashed #ff69b4;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: #ffffff;
+    border: 2px solid #ffb6c1;
+    border-radius: 12px;
+    padding: 20px 15px;
+    width: 220px;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff1493;
+    box-shadow: 0px 8px 15px rgba(255, 20, 147, 0.2);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.feature-card h3 {
+    margin: 8px 0;
+    color: #c71585;
+    font-size: 16px;
+}
+
+.feature-card p {
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Cute Polaroid Photo Frame Styling */
+.polaroid-frame {
+    background-color: #ffffff;
+    border: 3px solid #ffb6c1;
+    border-radius: 15px;
+    padding: 15px 15px 20px 15px;
+    display: inline-block;
+    box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.2);
+    transition: transform 0.3s ease;
+    margin: 15px 0;
+}
+
+.polaroid-frame:hover {
+    transform: scale(1.03);
+}
+
+.framed-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px dashed #ff69b4;
+    display: block;
+}
+
+.polaroid-caption {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.polaroid-caption p {
+    margin: 0;
+    color: #c71585;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* ===================================================
+   CLICKABLE GRID & POPUP LIGHTBOX STYLING (2 Per Row)
+   =================================================== */
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 550px;
+    margin: 15px auto;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border: 3px solid #ffb6c1;
+    border-radius: 15px;
+    padding: 12px;
+    width: 230px;
+    box-shadow: 0px 6px 15px rgba(255, 105, 180, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 25px rgba(255, 20, 147, 0.25);
+    border-color: #ff1493;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px dashed #ff69b4;
+    display: block;
+}
+
+.gallery-caption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.gallery-caption p {
+    margin: 0;
+    color: #c71585;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Popup Lightbox Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 70vh;
+    border-radius: 12px;
+    border: 4px solid #ffb6c1;
+    box-shadow: 0px 0px 25px rgba(255, 105, 180, 0.5);
+}
+
+#modalCaption {
+    margin: 15px auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ffb6c1;
+}
+
+/* Buttons and Navigation links */
+.nav-link-btn, .btn-primary {
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link-btn:hover, .btn-primary:hover {
+    background-color: #ff1493;
+}
+
+/* ===================================================
+   SLIDESHOW ARROW BUTTONS STYLING
+   =================================================== */
+
+.prev-btn, .next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+}
+
+.next-btn {
+    right: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn {
+    left: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(255, 105, 180, 0.8);
+}
+
+#slideshowCaption {
+    margin: 15px auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb6c1;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Container layout styling */
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column; /* Stacks rows vertically */
+  gap: 40px;              /* Forces 40px space between SFX and Video */
+  width: 100%;
+  max-width: 500px;       /* Adjust container width as needed */
+  margin: 0 auto;
+}
+
+.gallery-row {
+  width: 100%;
+  display: block;
+}
+
+.gallery-card {
+  background: #ffffff;
+  border: 1px solid #ffccd5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-footer, 
+.card-caption {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+}
+/* ===================================================
+   CONTACT PAGE & SOCIAL LINKS STYLING
+   =================================================== */
+
+.social-links-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.social-box {
+    background-color: #ffffff;
+    border: 2px solid #ffb6c1;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.15);
+    display: block;
+    text-align: center;
+}
+
+.social-box:hover {
+    transform: translateY(-6px);
+    border-color: #ff1493;
+    box-shadow: 0px 10px 20px rgba(255, 20, 147, 0.25);
+}
+
+.social-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.social-box h3 {
+    margin: 5px 0;
+    color: #c71585;
+    font-size: 18px;
+}
+
+.social-box p {
+    margin: 0;
+    color: #666666;
+    font-size: 13px;
+    word-break: break-all;
+}

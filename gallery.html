@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo & Video Gallery - Amira</title>
+  <link rel="stylesheet" href="style.css">
+<link rel= "icon" type="image/png" href="book.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Photo & Video Gallery 📷✨</h1>
+    <p>A collection of special moments, achievements, and memories</p>
+    <div style="margin-top: 15px;">
+      <a href="index.html" class="nav-link-btn">🏠 Welcome</a>
+      <a href="profile.html" class="nav-link-btn">⬅ Back to Profile</a>
+    </div>
+  </header>
+<!-- PHOTO COLLAGE SECTION WITH POPUP MODAL -->
+center
+    <section class="card">
+      <h2>📸 Photo Memories</h2>
+      <p style="color: #666; margin-bottom: 20px;">Click any photo to view it larger!</p>
+           <div class="gallery-grid">
+        
+        <!-- Photo 1 -->
+        <div class="gallery-item" onclick="openModal('amira 2.jpeg', 'achieved her first class degree for every semester')">
+          <img src="amira 2.jpeg" alt="Amira Portrait">
+          <div class="gallery-caption">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item" onclick="openModal('amira5.jpeg', 'attended volunteering at orphanage house.')">
+          <img src="amira5.jpeg" alt="UNIMAS Memories">
+          <div class="gallery-caption">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item" onclick="openModal('amira6.jpeg', '🤝 Volunteer & Events')">
+          <img src="amira6.jpeg" alt="Volunteer Activities">
+          <div class="gallery-caption">
+            <p></p>
+          </div>
+        </div>
+
+ <!-- Photo 4 -->
+        <div class="gallery-item" onclick="openModal('iban.jpeg', 'She visited the Iban village for research purposes.')">
+          <img src="iban.jpeg" alt="She visited the Iban village for research purposes.">
+          <div class="gallery-caption">
+            <p></p>
+          </div>
+        </div>
+
+
+
+<!-- SFX MAKEUP SLIDESHOW BOX -->
+        <div class="gallery-item" onclick="openSlideshow(['sfx1.jpeg', 'sfx2.jpeg', 'sfx3.jpeg', 'sfx4.jpeg'], 0)">
+          <img src="sfx1.jpeg" alt="SFX Makeup Event">
+          <div class="gallery-caption">
+            <p>🎨 SFX Makeup Project (3 Photos)</p>
+          </div>
+
+
+        <!-- ADD MORE PHOTOS HERE EASILY FOLLOWING THE SAME STRUCTURE -->
+
+      </div>
+    </section>
+
+    <!-- THE POPUP LIGHTBOX MODAL (Hidden by default) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close-btn">&times;</span>
+      <img class="modal-content" id="modalImg">
+      <div id="modalCaption"></div>
+    </div>
+
+        
+<!-- SLIDESHOW POPUP MODAL (Hidden by default) -->
+    <div id="slideshowModal" class="modal">
+      <span class="close-btn" onclick="closeSlideshow()">&times;</span>
+      
+      <!-- Previous & Next Arrow Buttons -->
+      <a class="prev-btn" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next-btn" onclick="changeSlide(1)">&#10095;</a>
+
+      <img class="modal-content" id="slideshowImg">
+      <div id="slideshowCaption"></div>
+    </div>
+
+    <!-- Inline JavaScript for Slideshow Functionality -->
+    <script type="text/javascript">
+      var currentImageArray = [];
+      var currentIndex = 0;
+
+      function openSlideshow(imageArray, startIndex) {
+        currentImageArray = imageArray;
+        currentIndex = startIndex;
+        
+        var modal = document.getElementById("slideshowModal");
+        modal.style.display = "block";
+        updateSlide();
+      }
+
+      function closeSlideshow() {
+        document.getElementById("slideshowModal").style.display = "none";
+      }
+
+      function changeSlide(direction) {
+        currentIndex += direction;
+        if (currentIndex >= currentImageArray.length) {
+          currentIndex = 0; // Loop back to the first photo
+        }
+        if (currentIndex < 0) {
+          currentIndex = currentImageArray.length - 1; // Loop to the last photo
+        }
+        updateSlide();
+      }
+
+      function updateSlide() {
+        var modalImg = document.getElementById("slideshowImg");
+        var captionContainer = document.getElementById("slideshowCaption");
+        
+        modalImg.src = currentImageArray[currentIndex];
+        captionContainer.innerHTML = "Photo " + (currentIndex + 1) + " of " + currentImageArray.length;
+      }
+  function openModal(imageSrc, captionText) {
+      var modal = document.getElementById("imageModal");
+      var modalImg = document.getElementById("modalImg");
+      var captionTextContainer = document.getElementById("modalCaption");
+      
+      modal.style.display = "block";
+      modalImg.src = imageSrc;
+      captionTextContainer.innerHTML = captionText;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+    </script>
+
+<div class="gallery-row">
+    <div class="gallery-card">
+      <video controls width="100%">
+        <source src="https://lnkd.in/p/gDVmwFe8" type="video/mp4">
+      </video>
+      <div class="card-footer">
+        <span>The making of Mascot🦅</span>
+        <a href="https://lnkd.in/p/gDVmwFe8" target="_blank" class="visit-btn">Visit Website &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="gallery-row">
+    <div class="gallery-card">
+      <video controls width="100%">
+        <source src="https://lnkd.in/p/gDVmwFe8" type="video/mp4">
+      </video>
+      <div class="card-footer">
+        <span>Juh berambeh di Kampung Asajaya Ulu</span>
+        <a href="https://lnkd.in/p/gD4HfMqz" target="_blank" class="visit-btn">Visit Website &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with 💖 by KHAIRISH FIONA BINTI ABDULLAH (2024245018) | IMD 318 Individual Assignment </p>
+  </footer>
+
+</body>
+</html>

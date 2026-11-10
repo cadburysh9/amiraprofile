@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why I Adore Her - Amira</title>
+  <link rel="stylesheet" href="style.css">
+<link rel= "icon" type="image/png" href="envelope.png">
+</head>
+<body>
+
+  <header>
+    <h1>Why I Adore Her 💖</h1>
+    <p>A Special Dedicated Note for Amira Binti Misli</p>
+    <div style="margin-top: 15px;">
+      <a href="index.html" class="nav-link-btn">🏠 Welcome</a>
+      <a href="profile.html" class="nav-link-btn">⬅ Back to Profile</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="card">
+      <h2>A Personal Inspiration</h2>
+      <p>Besides her excellent academic performance and achievements in her career, Amira will always have a special place in my heart. She is a source of inspiration for me as she is incredibly patient, caring, and persistent. She faces every day with a smile, regardless of the difficulties of university assignments and life in general. Her most remarkable quality is her quiet strength. She is able to do a lot of intensive academic work and pursue her creative interests at the same time and still provide support to everyone around her. Her ability to overcome difficulties and maintain a positive mindset and creativity makes her a fantastic student and an exceptional human being.</p>
+      
+      <!-- Interactive Cute Button & Secret Note -->
+      <div style="text-align: center; margin-top: 25px;">
+        <button onclick="toggleAdoreMessage()" class="btn-primary" style="cursor: pointer;">💖 Click for a Secret Surprise!</button>
+        
+        <div id="adore-message" style="display: none; margin-top: 20px; padding: 18px; background-color: #ffe4e1; border-left: 4px solid #ff1493; border-radius: 8px; color: #c71585; font-weight: bold;">
+          ✨ <b>Secret Note:</b> Amira isn't just brilliant at everything she does—she is also the most thoughtful listener, an amazing cousin, and a true blessing in my life! 💕
+        </div>
+      </div>
+    </section>
+  </div>
+<!-- Inline JavaScript for the Cute Button -->
+  <script type="text/javascript">
+    function toggleAdoreMessage() {
+      var msgBox = document.getElementById("adore-message");
+      if (msgBox.style.display === "block") {
+        msgBox.style.display = "none";
+      } else {
+        msgBox.style.display = "block";
+      }
+    }
+  </script>
+
+
+  <footer>
+    <p>Made with 💖 by KHAIRISH FIONA BINTI ABDULLAH (2024245018) | Assignment 2026</p>
+  </footer>
+
+  
+</body>
+</html>
